@@ -66,25 +66,25 @@ login-app/
 ## 🛠️ Technologies Used
 
 🌐 Frontend – Angular 15
-Angular 15: Robust SPA framework for scalable client-side development
+    Angular 15: Robust SPA framework for scalable client-side development
 
-Angular Material: Pre-built UI components for accessible design
+    Angular Material: Pre-built UI components for accessible design
 
-Bootstrap: Utility-first CSS toolkit to enhance responsive layout and styling
+    Bootstrap: Utility-first CSS toolkit to enhance responsive layout and styling
 
-RxJS: Reactive programming library for asynchronous data streams
+    RxJS: Reactive programming library for asynchronous data streams
 
-JWT Authentication (via HttpInterceptor): Secure token-based auth with expiry tracking
+    JWT Authentication (via HttpInterceptor): Secure token-based auth with expiry tracking
 
-Feature Modules with Lazy Loading: Modular architecture using Auth and Dashboard modules
+    Feature Modules with Lazy Loading: Modular architecture using Auth and Dashboard modules
 
-Forms: Supports both ReactiveFormsModule for flexible form handling
+    Forms: Supports both ReactiveFormsModule for flexible form handling
 
 🔧 Backend – Express.js
-Express.js: Minimalist Node.js framework for handling API routes
+    Express.js: Minimalist Node.js framework for handling API routes
 
-JSON Web Tokens (JWT): Stateless auth implementation with token expiration logic
+    JSON Web Tokens (JWT): Stateless auth implementation with token expiration logic
 
-CORS & Body Parser: Handles cross-origin requests and JSON payloads
+    CORS & Body Parser: Handles cross-origin requests and JSON payloads
 
-Environment-based Configs: Secure storage for secrets like JWT signing key
+    Environment-based Configs: Secure storage for secrets like JWT signing key
