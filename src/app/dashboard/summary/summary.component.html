@@ -1,0 +1,18 @@
+<div>
+    <h2>Thank you for shopping with us!</h2>
+    <h2>Order Summary</h2>
+    <h4>Items:</h4>
+    <ul>
+        <li *ngFor="let item of items">
+            {{ item.name }} - ${{ item.price }} 
+            Qty: {{item.quantity}}
+        </li>
+    </ul>
+
+    <h4>Shipping To:</h4>
+    <p>{{ address.name }}, 
+    {{ address.street }}, 
+    {{ address.city }}</p>
+
+    <h4>Total: ${{ total }}</h4>
+</div>

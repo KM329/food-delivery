@@ -1,0 +1,21 @@
+<h2>Select Your Meal</h2>
+<div class="row">
+  <div class="col-md-4" *ngFor="let item of menu">
+    <div class="card mb-3">
+      <img [src]="item.image" class="card-img-top">
+      <div class="card-body">
+        <h5>{{ item.name }}</h5>
+        <p>{{ item.description }}</p>
+        <p><strong>${{ item.price }}</strong></p>
+        <!-- Quantity Control -->
+        <div class="d-flex align-items-center mt-2">
+        <button class="btn btn-outline-danger me-2" (click)="decrement(item)" [disabled]="item.quantity === 0">−</button>
+        <span>{{ item.quantity }}</span>
+        <button class="btn btn-outline-success ms-2"
+            (click)="increment(item)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary mt-3" (click)="next()">Proceed to Address</button>

@@ -1,0 +1,7 @@
+<h2>Enter Your Address</h2>
+<form [formGroup]="addressForm" (ngSubmit)="proceed()">
+  <input formControlName="name" placeholder="Your Name" class="form-control mb-2" />
+  <input formControlName="street" placeholder="Street" class="form-control mb-2" />
+  <input formControlName="city" placeholder="City" class="form-control mb-2" />
+  <button type="submit" class="btn btn-success">Place Order</button>
+</form>
