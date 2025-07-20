@@ -24,6 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Project Structure
 
+```bash
 login-app/
 │
 ├── angular-jwt-app/                     # Angular frontend
@@ -62,6 +63,7 @@ login-app/
 │   └── .env                             # Secret key and configs
 │
 └── README.md   
+```
 
 ## 🛠️ Technologies Used
 
