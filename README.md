@@ -78,7 +78,7 @@ login-app/
 
     Feature Modules with Lazy Loading: Modular architecture using Auth and Dashboard modules
 
-    Forms: Supports both ReactiveFormsModule for flexible form handling
+Forms: Supports ReactiveFormsModule for flexible form handling
 
 🔧 Backend – Express.js
     Express.js: Minimalist Node.js framework for handling API routes
