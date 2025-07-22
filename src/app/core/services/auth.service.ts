@@ -12,7 +12,7 @@ export class AuthService {
   constructor(private httpClient: HttpClient) { }
 
   private apiUrl = 'http://localhost:3000';
-  private token: string = '';
+  private token: string = 'token';
   private tokenExpiration = new BehaviorSubject<number | null> (null);
 
   public login(username: string, password: string): Observable<Auth> {

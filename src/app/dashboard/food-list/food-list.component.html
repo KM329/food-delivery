@@ -1,7 +1,7 @@
 <h2>Select Your Meal</h2>
 <div class="row">
-  <div class="col-md-4" *ngFor="let item of menu">
-    <div class="card mb-3">
+  <div class="col-md-4" *ngFor="let item of filteredMenu; trackBy: trackById">
+    <div class="card mb-3 food-list-image">
       <img [src]="item.image" class="card-img-top">
       <div class="card-body">
         <h5>{{ item.name }}</h5>

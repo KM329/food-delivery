@@ -7,6 +7,8 @@ import { FoodListComponent } from './food-list/food-list.component';
 import { AddressEntryComponent } from './address-entry/address-entry.component';
 import { SummaryComponent } from './summary/summary.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ApiInterceptor } from '../core/interceptors/api.interceptor';
 
 
 @NgModule({
@@ -20,6 +22,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     DashboardRoutingModule,
     ReactiveFormsModule
+  ],
+  providers:[
+     {
+          provide: HTTP_INTERCEPTORS,
+          useClass: ApiInterceptor,
+          multi: true
+      }
   ]
 })
 export class DashboardModule { }
