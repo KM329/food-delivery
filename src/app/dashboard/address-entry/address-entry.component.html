@@ -7,15 +7,16 @@
       <p *ngIf="addressForm.get('name')?.invalid && addressForm.get('name')?.touched" class="text-danger">
         Enter Name
       </p>
-      <p class="text-danger" *ngIf="addressForm.get('name')?.touched && addressForm.get('name')?.hasError('minlength')"> Please enter atleast 3 characters. </p>
+      <p class="text-danger" *ngIf="addressForm.get('name')?.touched && addressForm.get('name')?.hasError('minlength')">
+        Please enter atleast 3 characters. </p>
     </div>
   </div>
 
   <div class="row mt-4">
     <div class="col-sm-6 col-12">
-      <input formControlName="addressOne" placeholder="Address Line 1" class="form-control" 
-      [ngClass]="{ 'is-invalid': addressForm.get('addressOne')?.touched && addressForm.get('addressOne')?.invalid }"/>
-       <p *ngIf="addressForm.get('addressOne')?.invalid && addressForm.get('addressOne')?.touched" class="text-danger">
+      <input formControlName="addressOne" placeholder="Address Line 1" class="form-control"
+        [ngClass]="{ 'is-invalid': addressForm.get('addressOne')?.touched && addressForm.get('addressOne')?.invalid }" />
+      <p *ngIf="addressForm.get('addressOne')?.invalid && addressForm.get('addressOne')?.touched" class="text-danger">
         Enter Address
       </p>
     </div>
@@ -29,21 +30,23 @@
 
   <div class="row mt-4">
     <div class="col-sm-6 col-12">
-      <input formControlName="city" placeholder="City" class="form-control" 
-      [ngClass]="{ 'is-invalid': addressForm.get('city')?.touched && addressForm.get('city')?.invalid }"/>
-       <p *ngIf="addressForm.get('city')?.invalid && addressForm.get('city')?.touched" class="text-danger">
+      <input formControlName="city" placeholder="City" class="form-control"
+        [ngClass]="{ 'is-invalid': addressForm.get('city')?.touched && addressForm.get('city')?.invalid }" />
+      <p *ngIf="addressForm.get('city')?.invalid && addressForm.get('city')?.touched" class="text-danger">
         Enter City
       </p>
     </div>
   </div>
   <div class="row mt-4">
     <div class="col-sm-6 col-12">
-      <input formControlName="zipcode" placeholder="ZipCode" class="form-control" 
-      [ngClass]="{ 'is-invalid': addressForm.get('zipcode')?.touched && addressForm.get('zipcode')?.invalid }"/>
-       <p *ngIf="addressForm.get('zipcode')?.invalid && addressForm.get('zipcode')?.touched" class="text-danger">
+      <input formControlName="zipcode" placeholder="ZipCode" class="form-control"
+        [ngClass]="{ 'is-invalid': addressForm.get('zipcode')?.touched && addressForm.get('zipcode')?.invalid }" />
+      <p *ngIf="addressForm.get('zipcode')?.invalid && addressForm.get('zipcode')?.touched" class="text-danger">
         Enter ZipCode
       </p>
     </div>
   </div>
-  <button type="button" (click)="proceed()" class="btn btn-success mt-4">Place Order</button>
+  <div class="text-end">
+    <button type="button" (click)="proceed()" class="btn btn-success mt-4">Place Order</button>
+  </div>
 </form>

@@ -1,6 +1,6 @@
-# Online Food Delivery App
+# 🛍️ Food Delivery App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
+This project is a food ordering application with JWT authentication and multi-step checkout flow. version 15.1.3.
 
 ## Project Structure
 
@@ -60,7 +60,7 @@ login-app/
 
     Feature Modules with Lazy Loading: Modular architecture using Auth and Dashboard modules
 
-Forms: Supports ReactiveFormsModule for flexible form handling
+    Forms: Supports ReactiveFormsModule for flexible form handling
 
 🔧 Backend – Express.js
     Express.js: Minimalist Node.js framework for handling API routes
@@ -71,24 +71,29 @@ Forms: Supports ReactiveFormsModule for flexible form handling
 
     Environment-based Configs: Secure storage for secrets like JWT signing key
 
+
+## 📸 Screenshots
+    Login Screen
+    <img src="screenshots/loginScreen.png" alt="Login screen" width="600"/>
+
+    Dashboard / Food List Screen
+    <img src="screenshots/dashboard.png" alt="Food list screen" width="600"/>
+
+    Address Screen
+    <img src="screenshots/address.png" alt="Address screen" width="600"/>
+
+    Order Summary Page
+    <img src="screenshots/orderSummary.png" alt="Order summary screen" width="600"/>
+
+
 ## Development server
 
 Run `ng serve` in login-app for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 Run `node server.js` in jwt-api for node server. Navigate to `http://localhost:3000`
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Upcoming Enhancements
+    Refresh Token
+    Cart Page
+    Push notifications for orders
+    Add Step Guard from directly bookmarking steps

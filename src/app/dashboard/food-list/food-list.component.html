@@ -9,13 +9,15 @@
         <p><strong>${{ item.price }}</strong></p>
         <!-- Quantity Control -->
         <div class="d-flex align-items-center mt-2">
-        <button class="btn btn-outline-danger me-2" (click)="decrement(item)" [disabled]="item.quantity === 0">−</button>
-        <span>{{ item.quantity }}</span>
-        <button class="btn btn-outline-success ms-2"
-            (click)="increment(item)">+</button>
+          <button class="btn btn-outline-danger me-2" (click)="decrement(item)"
+            [disabled]="item.quantity === 0">−</button>
+          <span>{{ item.quantity }}</span>
+          <button class="btn btn-outline-success ms-2" (click)="increment(item)">+</button>
         </div>
       </div>
     </div>
   </div>
+  <div class="text-end">
+    <button class="btn btn-primary mt-3" (click)="next()">Proceed to Address</button>
+  </div>
 </div>
-<button class="btn btn-primary mt-3" (click)="next()">Proceed to Address</button>
