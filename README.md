@@ -73,18 +73,18 @@ login-app/
 
 
 ## 📸 Screenshots
-    ### Login Screen
+  Login Screen
     <img width="1434" height="477" alt="loginScreen" src="https://github.com/user-attachments/assets/7924d5e2-55a6-4d6b-8dca-7dd80aa2b4a6" />
 
     
-    ### Dashboard / Food List Screen
+  Dashboard / Food List Screen
     <img width="1436" height="756" alt="dashboard" src="https://github.com/user-attachments/assets/5a01f1b5-721e-423c-aa8a-90311e7eac0e" />
 
 
-    ### Address Screen
+  Address Screen
     <img src="https://github.com/KM329/food-delivery/blob/master/screenshots/address.png" alt="Address screen" width="600"/>
 
-    ### Order Summary Page
+  Order Summary Page
     <img src="https://github.com/KM329/food-delivery/blob/master/screenshots/orderSummary.png" alt="Order summary screen" width="600"/>
 
 
