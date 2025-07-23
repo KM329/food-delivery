@@ -82,10 +82,10 @@ login-app/
 
 
   Address Screen
-    <img src="https://github.com/KM329/food-delivery/blob/master/screenshots/address.png" alt="Address screen" width="600"/>
+    <img width="1436" height="756" alt="Address" src="https://github.com/KM329/food-delivery/blob/master/screenshots/address.png" />
 
   Order Summary Page
-    <img src="https://github.com/KM329/food-delivery/blob/master/screenshots/orderSummary.png" alt="Order summary screen" width="600"/>
+    <img width="1436" height="756" alt="OrdeerSummary" src="https://github.com/KM329/food-delivery/blob/master/screenshots/orderSummary.png" />
 
 
 ## Development server
