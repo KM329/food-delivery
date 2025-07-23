@@ -74,8 +74,8 @@ login-app/
 
 ## 📸 Screenshots
     ### Login Screen
-    <img src="https://github.com/KM329/food-delivery/blob/master/screenshots/loginScreen.png" alt="Login screen" width="600"/>
-
+    ![ScreenShot](/screenshots/loginScreen.png)
+    
     ### Dashboard / Food List Screen
     <img src="https://github.com/KM329/food-delivery/blob/master/screenshots/dashboard.png" alt="Dashboard screen" width="600"/>
 
