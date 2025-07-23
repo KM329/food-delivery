@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { OrderService } from '../services/order.service';
 import { Router } from '@angular/router';
+import { Address } from '../model/Address.model';
 
 @Component({
   selector: 'app-address-entry',
@@ -10,9 +11,11 @@ import { Router } from '@angular/router';
 })
 export class AddressEntryComponent {
   addressForm = this.fb.group({
-    name: [''],
-    street: [''],
-    city: ['']
+    name: ['', [Validators.required, Validators.minLength(3)]],
+    addressOne: ['', Validators.required],
+    addressTwo: ['',],
+    city: ['', Validators.required],
+    zipcode: ['', Validators.required]
   });
 
   constructor(private fb: FormBuilder, 
@@ -23,9 +26,12 @@ export class AddressEntryComponent {
     this.addressForm.patchValue(this.order.address); // Pre-populate form on back
   }
 
-  proceed() {
-    this.order.setAddress(this.addressForm.value);
-    this.router.navigate(['/dashboard/summary']);
+  public proceed(): void {
+    this.addressForm.markAllAsTouched();
+    if(this.addressForm.valid) {
+      this.order.setAddress(this.addressForm.value as Address);
+      this.router.navigate(['/dashboard/summary']);
+    }
   }
 
 }

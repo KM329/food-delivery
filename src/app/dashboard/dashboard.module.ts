@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
@@ -23,12 +23,13 @@ import { ApiInterceptor } from '../core/interceptors/api.interceptor';
     DashboardRoutingModule,
     ReactiveFormsModule
   ],
-  providers:[
-     {
-          provide: HTTP_INTERCEPTORS,
-          useClass: ApiInterceptor,
-          multi: true
-      }
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ApiInterceptor,
+      multi: true
+    },
+   
   ]
 })
 export class DashboardModule { }

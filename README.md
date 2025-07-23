@@ -1,28 +1,6 @@
-# LoginApp
+# Online Food Delivery App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
-
-## Development server
-
-Run `ng serve` in login-app for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-Run `node server.js` in jwt-api for node server. Navigate to `http://localhost:3000`
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Project Structure
 
@@ -92,3 +70,25 @@ Forms: Supports ReactiveFormsModule for flexible form handling
     CORS & Body Parser: Handles cross-origin requests and JSON payloads
 
     Environment-based Configs: Secure storage for secrets like JWT signing key
+
+## Development server
+
+Run `ng serve` in login-app for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+Run `node server.js` in jwt-api for node server. Navigate to `http://localhost:3000`
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
